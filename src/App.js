@@ -4,9 +4,7 @@ import products from './data/products.js'
 
 function App(){
 
-    const productComponents = products.map(productData => 
-        <Product key={productData.id} name={productData.name} price={productData.price} description={productData.description} />    
-    )
+    const productComponents = products.map(productData => <Product key={productData.id} product={productData} />)
 
     return(
         <>
